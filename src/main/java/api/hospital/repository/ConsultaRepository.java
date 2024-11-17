@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ConsultaRepository extends JpaRepository<Consulta, Integer> {
+    Iterable<Consulta> findAllByPacienteNome(String nome);
+    Iterable<Consulta> findAllByMedicoNome(String nome);
 }

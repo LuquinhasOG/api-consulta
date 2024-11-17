@@ -9,4 +9,20 @@ public class EstadoConsulta {
     private Integer id;
     @Column(length = 20)
     private String estado;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
 }
